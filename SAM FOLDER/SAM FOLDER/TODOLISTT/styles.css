@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6dbdb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-input input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0f7fa;
+}
+
+.task-input button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
+}
+
+.task-list, .completed-task-list {
+    margin-top: 20px;
+}
+
+.task-list ul, .completed-task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li, .completed-task-list li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li span, .completed-task-list li span {
+    font-size: 14px;
+    color: #555;
+}
+
+.task-list li button, .completed-task-list li button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list li button:hover, .completed-task-list li button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .task-input input {
+        width: 65%;
+    }
+}
